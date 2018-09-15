@@ -1,0 +1,36 @@
+.container {
+	
+	border: 2px solid #ddd;
+}
+/*  modal holder (hodle the name of class )    */
+
+div.holder {
+
+	position: relative;
+	display: inline-block;
+	border: 1px solid blue;
+	height: 100px;
+	width: 200px;
+
+
+}
+div.item{
+	position: relative;
+	display: inline-block ;
+	border-radius: 2px;
+	margin-left: 2px;
+	margin-top: 2px;
+
+}
+.id {
+
+}
+
+svg {
+	height: 100px;
+	width: 100px;
+	display : inline;
+}
+svg text {
+	font-size:2em;
+}
