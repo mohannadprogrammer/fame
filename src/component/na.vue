@@ -1,10 +1,7 @@
 <template>
 
   <div id="nav">
-      <nav class="navbar navbar-inverse  mynav">
-        <h1>CI<font>CD </font> </h1>
-    
-      </nav>
+      <h1>s;ldff;lksdf;</h1>
   </div>
 </template>
 

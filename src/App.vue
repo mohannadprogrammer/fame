@@ -3,6 +3,7 @@
   <div id="app">
     	
 		<nav class="navbar navbar-inverse  mynav">
+      
       <h1>CI<font>CD </font> </h1>
 
     </nav>
@@ -125,12 +126,19 @@
 </div>
     </section>
 
-  
+   
   </div>
+ 
 </template>
 
 <script>
+import na from './component/na.vue';
+
+   
 export default {
+   components: {
+        'na': na
+    },
   name: 'app',
   data () {
     return {

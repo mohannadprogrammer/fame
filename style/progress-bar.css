@@ -56,7 +56,6 @@ svg.radial-progress {
 
 svg.radial-progress circle {
   fill: rgba(0,0,0,0);
-  stroke: #fff;
   stroke-dashoffset: 219.91148575129; /* Circumference */
   stroke-width: 10;
 }
@@ -71,23 +70,3 @@ svg.radial-progress text {
   text-anchor: middle;
 }
 
-/*** COLORS ***/
-/* Primary */
-
-svg.radial-progress:nth-of-type(6n+1) circle { stroke: #d44995; }
-
-/* Secondary */
-
-svg.radial-progress:nth-of-type(6n+2) circle { stroke: #83e4e2; }
-
-/* Tertiary */
-
-svg.radial-progress:nth-of-type(6n+3) circle { stroke: #fd6470; }
-
-/* Quaternary */
-
-svg.radial-progress:nth-of-type(6n+4) circle { stroke: #fca858; }
-
-/* Quinary */
-
-svg.radial-progress:nth-of-type(6n+5) circle { stroke: #fddc32; }
