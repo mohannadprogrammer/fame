@@ -26,6 +26,7 @@
 </template>
 
 <script>
+
 var projs =[
     {
         name :"calculator System",
@@ -98,7 +99,7 @@ export default {
     },
     setForALL(){
         for (var i =0 ;i<=this.projects.length;i++){
-
+            setColor
         }
     }
   },
