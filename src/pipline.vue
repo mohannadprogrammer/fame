@@ -1,26 +1,22 @@
 <template>
 
-  <div id="project">
+  <div id="pipline">
       <nav class="navbar navbar-inverse  mynav">
       
       <h1>CI<font>CD </font> </h1>
       
     </nav>
-    <allproject></allproject>
-    <add></add>
+   <add></add>
   </div>
 </template>
 
 <script>
-import allproject from "./component/project/allproject.vue";
-import add from './component/project/addProject.vue';
-
+import add from "./component/pipline/addTestBlock.vue";
 export default {
   components:{
-      "allproject":allproject,
       "add":add
   },
-  name :'project',
+  name :'pipline',
   data () {
     return {
         

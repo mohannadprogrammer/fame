@@ -22,7 +22,13 @@
         </div>
         </div>    
     </div>
-  </div>
+    
+    <button  type="button" class="add btn btn-success" data-toggle="modal" data-target="#exampleModal">
+            <span class ="glyphicon glyphicon-plus" ></span>
+    </button>
+
+
+</div>
 </template>
 
 <script>
