@@ -6,7 +6,7 @@
 
       <div class="row">
         
-        <div v-for="(project,index) of projects" class ="col-lg-3 col-md-6 col-sm-6" href="pipeline.html"  >
+        <div v-for="(project,index) of projects" class ="col-lg-3 col-md-6 col-sm-6" href="pipeline.html">
           <div class ="project-box text-center">
             <h4>{{project.name}}</h4>
               <svg class="radial-progress" data-percentage="0" viewBox="0 0 80 80">
@@ -23,11 +23,7 @@
         </div>    
     </div>
     
-    <button  type="button" class="add btn btn-success" data-toggle="modal" data-target="#exampleModal">
-            <span class ="glyphicon glyphicon-plus" ></span>
-    </button>
-
-
+    <add v-bind:projects="projects"></add>
 </div>
 </template>
 
@@ -60,8 +56,15 @@ var projs =[
         cicle:"stroke-dashoffset:"+((100-25)/100)*219
     }
 ];
+import add from "./addproject.vue";
+
+
+
 export default {
   name :"allproject",
+  components:{
+      "add":add
+  },
   data () {
     return {
         projects :projs,

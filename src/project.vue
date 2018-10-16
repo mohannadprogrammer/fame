@@ -7,18 +7,17 @@
       
     </nav>
     <allproject></allproject>
-    <add></add>
+    
   </div>
 </template>
 
 <script>
 import allproject from "./component/project/allproject.vue";
-import add from './component/project/addProject.vue';
 
 export default {
   components:{
-      "allproject":allproject,
-      "add":add
+      "allproject":allproject
+      
   },
   name :'project',
   data () {

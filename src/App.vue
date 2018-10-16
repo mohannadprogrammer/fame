@@ -116,10 +116,7 @@
     <label>Email</label>
     <input name ="email" type="email" placeholder="Enter Your Email" class="form-control">
   </div>
-  <div class="form-group">
-    <label>Phone</label>
-    <input name = "phone" type="number" placeholder="Enter YourPhone Number" class="form-control">
-  </div>
+  
 
     <button class="btn btn-primary btn-block" style="width: 40%; margin-left: 30%;">Sign Up</button>
 </form>

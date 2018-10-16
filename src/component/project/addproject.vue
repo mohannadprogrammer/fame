@@ -1,11 +1,12 @@
 <template>
 
   <div id="addProject">
+    
       <!-- Modal -->
 <div class="modal fade" id="addprojectModal" tabindex="-1" role="dialog" aria-labelledby="addprojectModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header"> 
         <h3 class="modal-title" id="addprojectModalLabel">Add new project </h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -28,7 +29,7 @@
   
 <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" >Add</button>
+        <button type="button" class="btn btn-primary" v-on:click="add">Add</button>
       </div>
 </form>
       </div>
@@ -38,7 +39,7 @@
 </div>
 
 
-         <button  type="button" class="add btn btn-success" data-toggle="modal" data-target="#addprojectModal">
+         <button  type="button" class="add btn btn-success" data-toggle="modal" data-target="#addprojectModal" >
             <span class ="glyphicon glyphicon-plus" ></span>
             
       </button>
@@ -47,9 +48,22 @@
 
 <script>
 export default {
-
+  props:['projects'],
   data () {
-    
+    return {
+
+    }
+  },
+  methods:{
+    add(){
+      var n={
+        name :"school grade System",
+        description :"system do the main math process",
+        compeleteness:80,
+        cicle:"stroke-dashoffset:"+((100-80)/100)*219
+    };
+    projects.push(n);
+    }
   }
 }
 </script>
